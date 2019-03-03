@@ -1,0 +1,177 @@
+//导入 normalize   完成对所有样浏览器的样式统一
+@import "normalize";
+//导入 base  在normalize  基础上进行定制，完成对一些样式的重置
+@import "base";
+//导入公用部分
+@import "common";
+//使用 flexible 完成对rem的适配
+//基准值 = 设计图尺寸 / 10
+@desgin: 750;
+@base: 75rem;
+
+.container {
+  width: 100%;
+  height:2000 /@base;
+//  ps
+  background-color: #f1f1f1;
+  //设置头部padding值
+  padding-top: 200 / @base;
+  .main {
+    padding-top: 20 / @base;
+    //导航
+    .nav {
+      ul {
+        padding: (14 / @base) (43 / @base) ( 26 / @base) (43 / @base);
+        background-color: #fff;
+        //li 采用百分比 => 一行显示4个
+        li {
+          float: left;
+          width: 25%;
+          &.current {
+            display: none;
+          }
+          a {
+            display: block;
+            padding-top: 34 /@base;
+            //点击事件注册给a 造成的问题：display格式覆盖问题及动画卡顿，样式的不统一
+            img {
+              width: 102 /@base;
+              height: 102 /@base;
+              margin: 0 auto;
+            }
+
+            p {
+              font-size: 22 / @base;
+              text-align: center;
+              padding-top: 14 / @base;
+            }
+          }
+
+        }
+      }
+    }
+    //折扣
+    .discount {
+      margin-top: 10 /@base;
+
+      .dis_title {
+        height: 68 /@base;
+        padding: 0 (20 / @base);
+        background-image: linear-gradient(to bottom, #ffaf47, #ff9000);
+
+        .t_left {
+          float: left;
+          line-height: 68 /@base;
+          font-size: 32 /@base;
+          color: #fff3e0;
+        }
+
+        .t_right {
+          float: right;
+
+          img {
+            width: 40/@base;
+            height: 40/@base;
+            margin-top: 16 /@base;
+          }
+        }
+      }
+
+      .dis_list {
+        .dis_product {
+          height: 260 / @base;
+          border-bottom: (1 / @base) solid #ccc;
+          background-color: #ffffff;
+          position: relative;
+
+          .dis_desc {
+            padding-left: 258 / @base;
+            display: block;
+            height: 100%;
+
+            .left_img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 258 / @base;
+              height: 100%;
+              padding-top: 32 / @base;
+              padding-left: 16 / @base;
+
+              img {
+                width: 202 / @base;
+                height: 202 / @base;
+                vertical-align: middle;
+              }
+            }
+
+            .right_info {
+              height: 100%;
+              padding-top: 36 / @base;
+
+              .info_top {
+                font-size: 28 / @base;
+                height: 136 / @base;
+
+                .price {
+                  color: #ff8d19;
+                }
+              }
+
+              .info_bottom {
+                color: #999699;
+                font-size: 28 / @base;
+
+                .comment {
+                  float: right;
+                  margin-right: 16/@base;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+    //跟多
+    .more_bar {
+      margin-top: 20/@base;
+      padding: 0  (20 / @base);
+      height: 64/@base;
+      background-color: #fafafa;
+
+      .more_info {
+        display: block;
+        border: (1/@base) solid #dedede;
+        font-size: 26/@base;
+        height: 100%;
+        line-height: 64/@base;
+        border-radius: 10 /@base;
+        text-align: center;
+      }
+    }
+    //品牌排行
+    .brands {
+      height: 68 /@base;
+      padding: 0 (20 / @base);
+      background-image: linear-gradient(to bottom, #ffaf47, #ff9000);
+      margin-top: 20/@base;
+      .b_left {
+        float: left;
+        line-height: 68 /@base;
+        font-size: 32 /@base;
+        color: #fff3e0;
+      }
+      .b_right {
+        float: right;
+        img {
+          width: 40/@base;
+          height: 40/@base;
+          margin-top: 16 /@base;
+        }
+      }
+    }
+  }
+}
+
+

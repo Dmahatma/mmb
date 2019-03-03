@@ -1,0 +1,123 @@
+@desgin: 750;
+@base: 75rem;
+.header {
+  position:fixed;
+  top: 0;
+  right: 0;
+  z-index:999;
+  .header_top {
+    width: 750 / @base;
+    height: 98 / @base;
+    padding: 0 (12 / @base)  0 (34 / @base);
+    background-color: #ff841d;
+    .icon_left {
+        width: 371 / @base;
+        height: 100%;
+        float:left;
+      a {
+        display: block;
+        height:100%;
+        padding-top: 24 / @base ;
+        //ps
+        //background-color: red;
+        img {
+          width: 371 / @base;
+          height: 50 / @base;
+
+        }
+      }
+    }
+    //------------------------------------------------问题：当屏幕宽度小于50 时 左侧边图标会被覆盖掉
+    .icon_right {
+      float:right;
+      width:68 / @base;
+      height:100%;
+      a {
+        display: block;
+        height:100%;
+        padding-top: 15 / @base ;
+        img {
+          width: 68 / @base;
+          height: 68 / @base;
+        }
+      }
+    }
+  }
+  .header_search {
+    width: 750 / @base;
+    height: 102 / @base;
+    background-color: #ffffff;
+    padding:(24 / @base) (20 / @base) 0 (20 / @base) ;
+    .search_input {
+      width:570 / @base;
+      height:60 / @base;
+      font-size: 26 / @base;
+      background-color: #dee0e2;
+      color:#546395;
+      border-radius:50 / @base;
+      padding-left: 40 /@base;
+      float:left;
+    }
+    .search_btn {
+      width:124 / @base;
+      height:64 / @base;
+      background-color: #ff841d;
+      font-size: 34 / @base;
+      border-radius:30 / @base;
+      border: none;
+      float:right;
+      color:#fffeff;
+    }
+  }
+}
+
+//  --------------------------------------------------------------------底部
+.footer {
+  margin-top: 50 / @base;
+  .foot_top {
+    border-top: (1/@base) solid #c9c9c9;
+    border-bottom: (1/@base) solid #c9c9c9;
+    margin-bottom:34/@base;
+    ul {
+      li {
+        float:left;
+        width:33.3%;
+        a {
+          display: block;
+          height:70/@base;
+          border-right:(1/@base) solid #c9c9c9;
+          text-align:center;
+          line-height:70/@base;;
+          font-size:24/@base;
+          color:#0e0212;
+          font-weight:bold;
+          img {
+            display:inline;
+            width:28/@base;
+            height:28/@base;
+            vertical-align: middle;
+            position:relative;
+            top:-4/@base;
+          }
+        }
+      }
+    }
+  }
+  .footer_bottom {
+    margin-bottom:28 /@base;
+    p {
+      color:#8b8c8a;
+      font-size:24 /@base;
+      text-align: center;
+      .a1{
+        color :#fd5035
+      }
+      .a2 {
+        color:#000000;
+      }
+      span {
+        color:#8b8c8a;
+      }
+    }
+  }
+}

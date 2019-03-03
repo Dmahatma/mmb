@@ -1,0 +1,113 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+.header .header_top {
+  width: 10rem;
+  height: 1.30666667rem;
+  padding: 0 0.16rem 0 0.45333333rem;
+  background-color: #ff841d;
+}
+.header .header_top .icon_left {
+  width: 4.94666667rem;
+  height: 100%;
+  float: left;
+}
+.header .header_top .icon_left a {
+  display: block;
+  height: 100%;
+  padding-top: 0.32rem;
+}
+.header .header_top .icon_left a img {
+  width: 4.94666667rem;
+  height: 0.66666667rem;
+}
+.header .header_top .icon_right {
+  float: right;
+  width: 0.90666667rem;
+  height: 100%;
+}
+.header .header_top .icon_right a {
+  display: block;
+  height: 100%;
+  padding-top: 0.2rem;
+}
+.header .header_top .icon_right a img {
+  width: 0.90666667rem;
+  height: 0.90666667rem;
+}
+.header .header_search {
+  width: 10rem;
+  height: 1.36rem;
+  background-color: #ffffff;
+  padding: 0.32rem 0.26666667rem 0 0.26666667rem;
+}
+.header .header_search .search_input {
+  width: 7.6rem;
+  height: 0.8rem;
+  font-size: 0.34666667rem;
+  background-color: #dee0e2;
+  color: #546395;
+  border-radius: 0.66666667rem;
+  padding-left: 0.53333333rem;
+  float: left;
+}
+.header .header_search .search_btn {
+  width: 1.65333333rem;
+  height: 0.85333333rem;
+  background-color: #ff841d;
+  font-size: 0.45333333rem;
+  border-radius: 0.4rem;
+  border: none;
+  float: right;
+  color: #fffeff;
+}
+.footer {
+  margin-top: 0.66666667rem;
+}
+.footer .foot_top {
+  border-top: 0.01333333rem solid #c9c9c9;
+  border-bottom: 0.01333333rem solid #c9c9c9;
+  margin-bottom: 0.45333333rem;
+}
+.footer .foot_top ul li {
+  float: left;
+  width: 33.3%;
+}
+.footer .foot_top ul li a {
+  display: block;
+  height: 0.93333333rem;
+  border-right: 0.01333333rem solid #c9c9c9;
+  text-align: center;
+  line-height: 0.93333333rem;
+  font-size: 0.32rem;
+  color: #0e0212;
+  font-weight: bold;
+}
+.footer .foot_top ul li a img {
+  display: inline;
+  width: 0.37333333rem;
+  height: 0.37333333rem;
+  vertical-align: middle;
+  position: relative;
+  top: -0.05333333rem;
+}
+.footer .footer_bottom {
+  margin-bottom: 0.37333333rem;
+}
+.footer .footer_bottom p {
+  color: #8b8c8a;
+  font-size: 0.32rem;
+  text-align: center;
+}
+.footer .footer_bottom p .a1 {
+  color: #fd5035;
+}
+.footer .footer_bottom p .a2 {
+  color: #000000;
+}
+.footer .footer_bottom p span {
+  color: #8b8c8a;
+}
